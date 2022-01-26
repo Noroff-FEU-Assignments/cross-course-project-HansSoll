@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap)
+    format(Bold);
+}
+
+h1,
+h2 {
+  font-family: "Roboto" "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.cta {
+  font-family: "Source Sans Pro";
+}

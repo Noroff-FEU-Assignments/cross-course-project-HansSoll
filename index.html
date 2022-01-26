@@ -2,12 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="The home page of GameHub" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GameHub | Home</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/50e64d5df2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <h1>Hans-Fredrik's page</h1>
-    <p>Hello world :)</p>
-  </body>
+
+  <header>
+    <p><a href="index.html" class="logo">GameHub</a></p>
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html">Browse Games</a></li>
+        <li><a href="login.html">Sell Games</a></li>
+        <li><a href="login.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home">
+      <div class="welcome__content">
+        <h1>Buy Games</h1>
+        <h1>Sell Games</h1>
+        <h1>Play Games</h1>
+        <p><a href="signup.html" class="cta">Sign Up</a></p>
+        <p><a href="login.html" class="cta">Log in</a></p>
+        <p><a href="browse.html" class="cta">Browse</a></p>
+      </div>
+    </section>
+    <section class="browse__content">
+      <div>
+        <h2>We have games for every taste</h2>
+      </div>
+      <div>
+        <img
+          src="images/playstation_controller.jpg"
+          alt="Playstation games"
+          class="system_image"
+        />
+        <img
+          src="images/Nintendo_controller.jpg"
+          alt="Nintendo Switch games"
+          class="system_image"
+        />
+        <img
+          src="images/Xbox_controller.jpg"
+          alt="Xbox games"
+          class="system_image"
+        />
+        <img src="images/PC.jpg" alt="PC games" class="system_image" />
+        <img src="images/VR.jpg" alt="VR games" class="system_image" />
+        <img src="images/dice.jpg" alt="Board Games" class="system_image" />
+      </div>
+    </section>
+    <section class="top_sellers">
+      <h2>Top Sellers</h2>
+      <div>
+        <img
+          src="images/cover_Ping_Pong.jpg"
+          alt="Ping Pong Game"
+          class="game_image"
+        />
+        <img
+          src="images/cover_Furious.jpg"
+          alt="Furious Game"
+          class="game_image"
+        />
+        <img
+          src="images/cover_Super_Duper.jpg"
+          alt="Super Duper Game"
+          class="game_image"
+        />
+        <img
+          src="images/cover_assasin.jpg"
+          alt="Assassin Game"
+          class="game_image"
+        />
+      </div>
+    </section>
+    <section class="bottom_menu">
+      <p class="Footer_header">Account</p>
+      <ul>
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="login.html">Register</a></li>
+        <li><a href="login.html">Profile</a></li>
+        <li><a href="login.html">Orders</a></li>
+      </ul>
+      <p class="Footer_header">Help</p>
+      <ul>
+        <li><a href="login.html">Contact Us</a></li>
+        <li><a href="login.html">Returns</a></li>
+      </ul>
+      <p class="Footer_header">Follow Us!</p>
+      <p>Check us out on all our different Social Media sites!</p>
+
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-twitch"></i>
+      <div>
+        <a href="terms_of_use">Terms of Use</a>
+        <a href="terms_of_use">Privacy Policy</a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; GameHub Corporation
+      <br>Gamer Street 1337, Gamerton, 1234 State of gaming</br>
+      <img src="images/GameHub_Logo.png" alt="GameHub Logo">
+    </footer>
+  </main>
 </html>

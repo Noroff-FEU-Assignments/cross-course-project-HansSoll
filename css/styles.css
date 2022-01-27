@@ -5,7 +5,8 @@
 }
 
 h1,
-h2 {
+h2,
+.browse_content_name {
   font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
   font-size: 3em;
   text-transform: uppercase;
@@ -13,19 +14,23 @@ h2 {
 
 h1 {
   color: #f5700a;
-  -webkit-text-strok: 1px black;
 }
 .cta {
   font-family: "Source Sans Pro", "Segoe UI", Tahoma, Verdana, sans-serif;
   text-align: center;
-
   background-color: #f5700a;
-  color: #fff;
-  font-size: 1em;
+  color: #1b203d;
+  font-size: 1.5em;
+  font-weight: bold;
   text-transform: uppercase;
-  padding: 10px 120px;
-  border-radius: 10px;
+  padding: 10px 80px;
+  border-radius: 20px;
+  border: solid 3px #1b203d;
   margin: 150px;
+}
+
+.cta-white {
+  background-color: white;
 }
 
 a {
@@ -35,10 +40,14 @@ a {
 header {
   background-color: #bac5cf;
   margin: -8px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header a {
   color: #1b203d;
+  padding: 10px;
 }
 
 nav ul {
@@ -48,6 +57,9 @@ nav li {
   display: inline-block;
 }
 
+.system_image {
+  border-radius: 30px;
+}
 /* HOME PAGE */
 .home {
   background-image: url(../images/man_driving.jpg);
@@ -63,4 +75,23 @@ nav li {
   position: relative;
   text-align: center;
   top: 100px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+.browse_content_image {
+  position: relative;
+  text-align: center;
+}
+
+.browse_content_name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 3px black;
 }

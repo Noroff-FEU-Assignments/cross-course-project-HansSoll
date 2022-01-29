@@ -15,6 +15,10 @@ h2,
 h1 {
   color: #f5700a;
 }
+
+p {
+  color: #1b203d;
+}
 .cta {
   font-family: "Source Sans Pro", "Segoe UI", Tahoma, Verdana, sans-serif;
   text-align: center;
@@ -42,12 +46,16 @@ header {
   margin: -8px;
   padding: 8px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 header a {
   color: #1b203d;
   padding: 10px;
+}
+nav {
+  display: none;
 }
 
 nav ul {
@@ -56,9 +64,26 @@ nav ul {
 nav li {
   display: inline-block;
 }
+#hamburger.menu {
+  display: none;
+}
+
+#hamburger.menu:checked ~ nav {
+  display: block;
+}
 
 .system_image {
   border-radius: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #1b203d;
+}
+
+footer img {
+  max-width: 400px;
+  margin-top: 50px;
 }
 /* HOME PAGE */
 .home {
@@ -68,36 +93,29 @@ nav li {
   background-position-y: center;
   background-position-x: center;
   min-height: 90vh;
-  margin: -25px 0px 0px -25px;
+  margin: -25px 0px 25px -25px;
+  text-align: center;
 }
 
 .home__content {
   position: relative;
-  text-align: center;
-  top: 100px;
-  display: flex;
-  flex: 2;
-  flex-direction: column;
-}
-h2 {
-  flex: 100%;
-}
-.browse__content {
-  text-align: center;
+  text-align: match-parent;
   display: flex;
   flex: 1;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: auto;
-  padding: 100px;
+  flex-direction: column;
 }
 
+.browse__content {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .browse_content_image {
   display: inline-block;
   position: relative;
   margin-right: 10px;
+  width: auto;
 }
-
 .browse_content_name {
   position: absolute;
   left: 50%;
@@ -107,4 +125,23 @@ h2 {
   color: white;
   font-weight: bold;
   text-shadow: 0 0 3px black;
+}
+.browse__content h2 {
+  grid-column: -1/1;
+  text-align: center;
+}
+.top_sellers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-gap: 5px;
+}
+
+.top_sellers h2 {
+  grid-column: -1/1;
+  text-align: center;
+}
+
+.top_sellers img {
+  width: 100%;
 }

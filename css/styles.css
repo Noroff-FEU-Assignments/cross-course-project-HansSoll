@@ -93,11 +93,6 @@ footer {
   color: #1b203d;
 }
 
-footer img {
-  max-width: 400px;
-  margin-top: 50px;
-}
-
 .Footer_header {
   font-weight: bold;
 }
@@ -106,6 +101,11 @@ footer img {
   color: #1b203d;
   padding: 0px 5px;
 }
+
+footer img {
+  max-width: 200px;
+  margin-top: 50px;
+}
 /* HOME PAGE */
 
 body {
@@ -113,16 +113,19 @@ body {
   min-height: 100vh;
   margin: 0px;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr;
 }
+
 .home {
   background-image: url(../images/man_driving.jpg);
   background-size: 100%;
   background-repeat: none;
   background-position-y: center;
   background-position-x: center;
+  position: relative;
   min-height: 100vh;
   text-align: center;
+  object-fit: cover;
 }
 
 .home__content {
@@ -141,7 +144,7 @@ body {
   display: inline-block;
   position: relative;
   margin-right: 10px;
-  width: auto;
+  width: 100%;
 }
 .browse_content_name {
   position: absolute;
@@ -160,7 +163,6 @@ body {
 .top_sellers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
 }
 
 .top_sellers h2 {

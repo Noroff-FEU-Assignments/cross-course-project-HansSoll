@@ -43,7 +43,6 @@ a {
 
 header {
   background-color: #bac5cf;
-  margin: -8px;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -56,19 +55,25 @@ header a {
 }
 nav {
   display: none;
+  position: fixed;
+  top: 80px;
+  background: #bac5cf;
+  z-index: 1000;
+  right: 0px;
 }
-
 nav ul {
   padding: 0px;
 }
 nav li {
-  display: inline-block;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
 }
-#hamburger.menu {
+#hamburger-menu {
   display: none;
 }
 
-#hamburger.menu:checked ~ nav {
+#hamburger-menu:checked ~ nav {
   display: block;
 }
 
@@ -76,6 +81,13 @@ nav li {
   border-radius: 30px;
 }
 
+.bottom_menu {
+  padding: 10px;
+}
+
+.bottom_menu li {
+  display: block;
+}
 footer {
   text-align: center;
   color: #1b203d;
@@ -85,24 +97,39 @@ footer img {
   max-width: 400px;
   margin-top: 50px;
 }
+
+.Footer_header {
+  font-weight: bold;
+}
+
+.social-media i {
+  color: #1b203d;
+  padding: 0px 5px;
+}
 /* HOME PAGE */
+
+body {
+  font-family: "Source Sans Pro", "Segoe UI", Tahoma, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 .home {
   background-image: url(../images/man_driving.jpg);
   background-size: 100%;
   background-repeat: none;
   background-position-y: center;
   background-position-x: center;
-  min-height: 90vh;
-  margin: -25px 0px 25px -25px;
+  min-height: 100vh;
   text-align: center;
 }
 
 .home__content {
   position: relative;
   text-align: match-parent;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .browse__content {
@@ -133,7 +160,6 @@ footer img {
 .top_sellers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   grid-gap: 5px;
 }
 
@@ -144,4 +170,18 @@ footer img {
 
 .top_sellers img {
   width: 100%;
+  border-radius: 20px;
+}
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+  .browse__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .browse__content {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

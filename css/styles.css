@@ -192,17 +192,37 @@ body {
   border-radius: 20px;
 }
 
-/* Create an account */
+/* Account */
 
-.create_account {
+.profile {
+  margin: auto;
+  padding: 5px;
+}
+ul {
+  list-style-type: none;
+}
+.profile img {
+  float: left;
+}
+
+.profile_picture {
+  max-width: 150px;
+}
+
+.create_account,
+.login {
   max-width: 600px;
-  margin: 50px auto;
+  margin: auto;
   text-align: center;
+}
+
+.login {
+  margin-bottom: 100px;
 }
 
 input {
   border: 2px solid #1b203d;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 5px;
   padding: 5px 50px 5px 2px;
 }
@@ -229,6 +249,12 @@ input {
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.forgot_password {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0px;
 }
 
 .account_created div {

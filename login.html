@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Create an account on GameHub" />
+    <meta name="description" content="Log in to GameHub" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameHub | Create Account</title>
+    <title>GameHub | Log in</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,35 +34,38 @@
 
       <nav>
         <ul>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html" class="active">Log in</a></li>
           <li><a href="index.html">Browse Games</a></li>
           <li><a href="index.html">Sell Games</a></li>
           <li><a href="index.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="create_account">
-      <h1>Create an account</h1>
-      <form method="get" action="account_created.html">
+    <main class="login">
+      <h1>Log in</h1>
+      <form method="get" action="login_success.html">
         <div class="form">
           <section>
-            <input type="text" name="first-name" placeholder="First Name" />
-            <input type="text" name="Last-name" placeholder="Last Name" />
             <input type="text" name="email" placeholder="E-mail" />
             <input type="text" name="password" placeholder="Password" />
-            <input
-              type="text"
-              name="repeat-password"
-              placeholder="Repeat Password"
-            />
           </section>
         </div>
+
         <input type="submit" value="Submit" class="cta" />
       </form>
-
-      <p>Already a member?</p>
-      <p><a href="login.html" class="cta cta-white">Log in</a></p>
+      <ul class="forgot_password">
+        <li>
+          <div></div>
+          Forgot your password?
+          <a href="login.html">Reset Password</a>
+        </li>
+      </ul>
+      <div>
+        <p>Not a member?</p>
+        <p><a href="create_account.html" class="cta cta-white">Register</a></p>
+      </div>
     </main>
+
     <section>
         <div class="bottom_menu">
         <p class="Footer_header">Account</p>

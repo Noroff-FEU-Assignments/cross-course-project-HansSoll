@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Create an account on GameHub" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHub | Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/50e64d5df2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/GameHub_logo_text.png"
+          alt="Game Hub Logo"
+          class="logo"
+      /></a>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Login</a></li>
+          <li><a href="index.html">Browse Games</a></li>
+          <li><a href="index.html">Sell Games</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="create_account">
+      <h1>Create an account</h1>
+      <form method="get" action="account_created.html">
+        <div class="form">
+          <section>
+            <input type="text" name="first-name" placeholder="First Name" />
+            <input type="text" name="Last-name" placeholder="Last Name" />
+            <input type="text" name="email" placeholder="E-mail" />
+            <input type="text" name="password" placeholder="Password" />
+            <input
+              type="text"
+              name="repeat-password"
+              placeholder="Repeat Password"
+            />
+          </section>
+        </div>
+        <input type="submit" value="Submit" class="cta" />
+      </form>
+
+      <p>Already a member?</p>
+      <p><a href="index.html" class="cta cta-white">Log in</a></p>
+    </main>
+    <section>
+      <div class="bottom_menu">
+        <p class="Footer_header">Account</p>
+        <ul>
+          <li><a href="index.html">Sign In</a></li>
+          <li><a href="index.html">Register</a></li>
+          <li><a href="index.html">Profile</a></li>
+          <li><a href="index.html">Orders</a></li>
+        </ul>
+        <p class="Footer_header">Help</p>
+        <ul>
+          <li><a href="index.html">Contact Us</a></li>
+          <li><a href="index.html">Returns</a></li>
+        </ul>
+        <p class="Footer_header">Follow Us!</p>
+        <p>Check us out on all our different Social Media sites!</p>
+        <div class="social-media">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitch"></i>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <a href="index.html">Terms of Use</a>
+        <a href="index.html">Privacy Policy</a>
+      </div>
+      &copy; GameHub Corporation
+      <p>Gamer Street 1337, Gamerton, 1234 State of gaming</p>
+      <img src="images/GameHub_Logo.png" alt="GameHub Logo" />
+    </footer>
+  </body>
+</html>

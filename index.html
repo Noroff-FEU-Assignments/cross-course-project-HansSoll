@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GameHub | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
+    
     <script
       src="https://kit.fontawesome.com/50e64d5df2.js"
       crossorigin="anonymous"
@@ -37,18 +37,17 @@
   <main>
     <section class="home">
       <div class="home__content">
-        <h1>Buy Games</h1>
-        <h1>Sell Games</h1>
-        <h1>Play Games</h1>
-        <p><a href="index.html" class="cta">Sign Up</a></p>
+        <h1>Buy Games<span>Sell Games</span>Play Games</h1>
+       
+        <p><a href="create_account.html" class="cta">Sign Up</a></p>
         <p><a href="index.html" class="cta">Log in</a></p>
         <p><a href="index.html" class="cta cta-white">Browse</a></p>
       </div>
     </section>
-    <section class="browse__content">
+    <section>
       
         <h2>We have games for every taste</h2>
-      
+      <div class="browse__content">
       <div class="browse_content_image">
         <img
           src="images/playstation_controller.jpg"
@@ -77,33 +76,46 @@
         <img src="images/dice.jpg" alt="Board Games" class="system_image" /><p class="browse_content_name">Board Games</p></div>
         <div class="browse_content_image">
       </div>
+    </div>
     </section>
-    <section class="top_sellers">
+    <section>
       <h2>Top Sellers</h2>
+      <div class="top_sellers">
       <div>
         <img
           src="images/cover_Ping_Pong.jpg"
           alt="Ping Pong Game"
           class="game_image"
-        /></div>
+        />
+      <p>Ping Pong</p>
+      <p>$4,99</p>
+    </div>
         <div><img
           src="images/cover_Furious.jpg"
           alt="Furious Game"
           class="game_image"
-        /></div>
+        />
+        <p>Furious</p>
+        <p>$14,99</p></div>
         <div><img
           src="images/cover_Super_Duper.jpg"
           alt="Super Duper Game"
           class="game_image"
-        /></div>
+        />
+        <p>Super Duper</p>
+        <p>$4,99</p></div>
         <div><img
           src="images/cover_assasin.jpg"
           alt="Assassin Game"
           class="game_image"
         />
+        <p>Assassin</p>
+      <p>$8,99</p>
       </div>
     </section>
-    <section class="bottom_menu">
+  </div>
+    <section>
+      <div class="bottom_menu">
       <p class="Footer_header">Account</p>
       <ul>
         <li><a href="index.html">Sign In</a></li>
@@ -124,6 +136,7 @@
       <i class="fab fa-twitter"></i>
       <i class="fab fa-twitch"></i>
     </div>
+  </div>
     </section>
     <footer>
       <div>
@@ -131,7 +144,7 @@
         <a href="index.html">Privacy Policy</a>
       </div>
       &copy; GameHub Corporation
-      <br>Gamer Street 1337, Gamerton, 1234 State of gaming</br>
+      <p>Gamer Street 1337, Gamerton, 1234 State of gaming</p>
       <img src="images/GameHub_Logo.png" alt="GameHub Logo">
     </footer>
   </main>

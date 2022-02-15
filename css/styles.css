@@ -1,19 +1,20 @@
-@font-face {
-  font-family: "Roboto";
-  src: url(https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap)
-    format(Bold);
-}
-
 h1,
 h2,
 .browse_content_name {
   font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
   font-size: 3em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h1 {
-  color: #f5700a;
+  color: #1b203d;
+}
+h2 {
+  color: #1b203d;
+}
+h1 span {
+  display: block;
 }
 
 p {
@@ -30,13 +31,15 @@ p {
   padding: 10px 80px;
   border-radius: 20px;
   border: solid 3px #1b203d;
-  margin: 150px;
+  margin: auto;
 }
 
 .cta-white {
   background-color: white;
 }
-
+.active {
+  text-decoration: underline;
+}
 a {
   text-decoration: none;
 }
@@ -47,6 +50,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: auto;
 }
 
 header a {
@@ -79,6 +83,7 @@ nav li {
 
 .system_image {
   border-radius: 30px;
+  width: 100%;
 }
 
 .bottom_menu {
@@ -125,7 +130,6 @@ body {
   position: relative;
   min-height: 100vh;
   text-align: center;
-  object-fit: cover;
 }
 
 .home__content {
@@ -135,10 +139,16 @@ body {
   grid-template-columns: 1fr;
 }
 
+.home__content h1 {
+  color: #f5700a;
+}
 .browse__content {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .browse_content_image {
   display: inline-block;
@@ -163,6 +173,13 @@ body {
 .top_sellers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 1400px;
+  margin: auto;
+}
+.top_sellers p {
+  text-align: center;
+  margin-top: 0px;
 }
 
 .top_sellers h2 {
@@ -174,16 +191,86 @@ body {
   width: 100%;
   border-radius: 20px;
 }
+
+/* Create an account */
+
+.create_account {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+input {
+  border: 2px solid #1b203d;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 50px 5px 2px;
+}
+
+.form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.form > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.create_account p {
+  margin: 20px auto auto auto;
+}
+
+.account_created {
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.account_created div {
+  margin: 10px;
+}
 /* MEDIA QUERIES */
 
 @media (min-width: 600px) {
   .browse__content {
     grid-template-columns: repeat(3, 1fr);
   }
+  nav {
+    display: block;
+    position: static;
+  }
+  nav li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  header label {
+    display: none;
+  }
 }
 
 @media (min-width: 900px) {
   .browse__content {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .browse_content_name {
+    font-size: 1em;
+  }
+  .home {
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 2em;
   }
 }

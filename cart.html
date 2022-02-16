@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Log in to GameHub" />
+    <meta name="description" content="Shopping cart at GameHub" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameHub | Log in</title>
+    <title>GameHub | Shopping Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,35 +34,37 @@
 
       <nav>
         <ul>
-          <li><a href="login.html" class="active">Log in</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
           <li><a href="index.html">Browse Games</a></li>
           <li><a href="index.html">Sell Games</a></li>
           <li><a href="index.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="login">
-      <h1>Log in</h1>
-      <form method="get" action="login_success.html">
-        <div class="form">
-          <section>
-            <input type="text" name="email" placeholder="E-mail" />
-            <input type="text" name="password" placeholder="Password" />
-          </section>
+    <main>
+      <h1>Shopping Cart</h1>
+      <div class="cart-items">
+        <div class="cart-image">
+          <img
+            src="images/cover_Ping_Pong.jpg"
+            alt="Ping Pong Cover"
+            class="cart-image"
+          />
         </div>
-
-        <input type="submit" value="Submit" class="cta" />
-      </form>
-      <ul class="forgot_password">
-        <li>
-          <div></div>
-          Forgot your password?
-          <a href="login.html">Reset Password</a>
-        </li>
-      </ul>
-      <div>
-        <p>Not a member?</p>
-        <p><a href="create_account.html" class="cta cta-white">Register</a></p>
+        <div class="cart-about">
+          <p class="cart-title">Ping-Pong Championship</p>
+          <p class="cart-price">$4,99</p>
+        </div>
+        <div class="counter">
+          <div class="button">+</div>
+          <div class="count">1</div>
+          <div class="button">-</div>
+        </div>
+      </div>
+      <div class="cart-checkout">
+        <div class="cart-title-total">Total</div>
+        <div class="cart-price-total">$4,99</div>
+        <a href="checkout1.html" class="cta">Checkout</a>
       </div>
     </main>
 

@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Account Profile on GameHub" />
+    <meta name="description" content="Sell games on GameHub" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameHub | Account Profile</title>
+    <title>GameHub | Sell Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +15,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <script
       src="https://kit.fontawesome.com/50e64d5df2.js"
       crossorigin="anonymous"
@@ -33,46 +34,39 @@
 
       <nav>
         <ul>
-          <li><a href="profile.html" class="active">Profile</a></li>
-          <li><a href="index.html">Browse Games</a></li>
-          <li><a href="index.html">Sell Games</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="browse.html" class="active">Browse Games</a></li>
+          <li><a href="sell.html" class="active">Sell Games</a></li>
           <li><a href="index.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Account Profile</h1>
-      <section class="profile">
-        <div>
-          <img
-            src="images/profile_picture.jpg"
-            alt="profile picture"
-            class="profile_picture"
-          />
-
-          <h3 class="profile_name">Juan Deagle</h3>
-
-          <p class="profile_rating">Rating:</p>
-          <div class="profile_stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+      <h1>Sell game</h1>
+      <section class="sell_game">
+        <form method="get">
+          <div>
+            <input type="text" name="game name" placeholder="Game Name" />
           </div>
-        </div>
-        <div>
-          <ul>
-            <li>Edit payment information</li>
-            <li>See transaction history</li>
-            <li>Choose shipping options</li>
-            <li>Create a new password</li>
-            <li>See active listings</li>
-          </ul>
-        </div>
+          <div>
+            <input type="text" name="asking price" placeholder="Asking price" />
+          </div>
+          <div>
+            <label for="gaming-system">Choose gaming system</label>
+            <select id="gaming-system" name="gaming-system">
+              <option value="Playstation">Playstation</option>
+              <option value="Xbox">Xbox</option>
+              <option value="PC">PC</option>
+              <option value="Nintendo">Nintendo</option>
+              <option value="VR">VR</option>
+              <option value="Board Game">Board Game</option>
+            </select>
+          </div>
+        </form>
+        <a href="sell.html">Upload photos</a>
+        <button class="cta">Submit</button>
       </section>
     </main>
-
     <section>
       <div class="bottom_menu">
         <p class="Footer_header">Account</p>

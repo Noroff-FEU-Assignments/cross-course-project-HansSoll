@@ -397,6 +397,10 @@ input {
   text-align: center;
 }
 
+.sold_text {
+  text-align: center;
+}
+
 /* Cart */
 
 .cart-image {
@@ -482,6 +486,8 @@ input {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 800px;
+  margin: auto;
 }
 
 .checkout-active {
@@ -524,6 +530,25 @@ input {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* contact page */
+
+.contact_info {
+  margin: auto;
+  text-align: center;
+}
+
+.contact_image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.bold {
+  font-weight: 700;
 }
 /* MEDIA QUERIES */
 
